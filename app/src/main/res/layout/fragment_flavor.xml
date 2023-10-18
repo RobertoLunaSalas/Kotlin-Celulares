@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:checked="@{viewModel.flavor.equals(@string/vanilla)}"
                     android:onClick="@{() -> viewModel.setFlavor(@string/vanilla)}"
-                    android:text="@string/vanilla" />
+                    android:text="Galaxy M13" />
 
                 <RadioButton
                     android:id="@+id/salted_caramel"
@@ -61,7 +61,7 @@
                     android:layout_height="wrap_content"
                     android:checked="@{viewModel.flavor.equals(@string/salted_caramel)}"
                     android:onClick="@{() -> viewModel.setFlavor(@string/salted_caramel)}"
-                    android:text="@string/salted_caramel" />
+                    android:text="Galaxy A33" />
 
                 <RadioButton
                     android:id="@+id/coffee"
@@ -69,7 +69,23 @@
                     android:layout_height="wrap_content"
                     android:checked="@{viewModel.flavor.equals(@string/coffee)}"
                     android:onClick="@{() -> viewModel.setFlavor(@string/coffee)}"
-                    android:text="@string/coffee" />
+                    android:text="Galaxy S21" />
+
+                <RadioButton
+                    android:id="@+id/chocolate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="@{viewModel.flavor.equals(@string/chocolate)}"
+                    android:onClick="@{() -> viewModel.setFlavor(@string/chocolate)}"
+                    android:text="Galaxy S22 Ultra" />
+
+                <RadioButton
+                    android:id="@+id/red_velvet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="@{viewModel.flavor.equals(@string/red_velvet)}"
+                    android:onClick="@{() -> viewModel.setFlavor(@string/red_velvet)}"
+                    android:text="Galaxy Z Flip 4" />
             </RadioGroup>
 
             <View
@@ -100,33 +116,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/side_margin"
                 android:onClick="@{() -> flavorFragment.goToNextScreen()}"
-                android:text="@string/next"
+                android:text="Siguiente"
                 app:backgroundTint="#FD9600"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/subtotal"
                 app:layout_constraintVertical_bias="0.0" />
-
-            <RadioButton
-                android:id="@+id/chocolate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="@{viewModel.flavor.equals(@string/chocolate)}"
-                android:onClick="@{() -> viewModel.setFlavor(@string/chocolate)}"
-                android:text="@string/chocolate"
-                tools:layout_editor_absoluteX="225dp"
-                tools:layout_editor_absoluteY="2dp" />
-
-            <RadioButton
-                android:id="@+id/red_velvet"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="@{viewModel.flavor.equals(@string/red_velvet)}"
-                android:onClick="@{() -> viewModel.setFlavor(@string/red_velvet)}"
-                android:text="@string/red_velvet"
-                tools:layout_editor_absoluteX="224dp"
-                tools:layout_editor_absoluteY="50dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

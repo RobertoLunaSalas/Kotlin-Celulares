@@ -54,7 +54,7 @@
                     android:checked="@{viewModel.date.equals(viewModel.dateOptions[0])}"
                     android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[0])}"
                     android:text="@{viewModel.dateOptions[0]}"
-                    tools:text="Thursday" />
+                    tools:text="Jueves" />
 
                 <RadioButton
                     android:id="@+id/option1"
@@ -63,7 +63,7 @@
                     android:checked="@{viewModel.date.equals(viewModel.dateOptions[1])}"
                     android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[1])}"
                     android:text="@{viewModel.dateOptions[1]}"
-                    tools:text="Friday" />
+                    tools:text="Viernes" />
 
                 <RadioButton
                     android:id="@+id/option2"
@@ -72,7 +72,7 @@
                     android:checked="@{viewModel.date.equals(viewModel.dateOptions[2])}"
                     android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[2])}"
                     android:text="@{viewModel.dateOptions[2]}"
-                    tools:text="Saturday" />
+                    tools:text="Sabado" />
 
                 <RadioButton
                     android:id="@+id/option3"
@@ -81,7 +81,8 @@
                     android:checked="@{viewModel.date.equals(viewModel.dateOptions[3])}"
                     android:onClick="@{() -> viewModel.setDate(viewModel.dateOptions[3])}"
                     android:text="@{viewModel.dateOptions[3]}"
-                    tools:text="Sunday" />
+                    tools:text="Domingo" />
+
             </RadioGroup>
 
             <View
